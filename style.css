@@ -1,0 +1,385 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgba(170, 170, 170, 0.3);
+  font-family: 'Poppins' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif , sans-serif;
+}
+
+/**********container******/
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+nav {
+  background: url('img/header.jpeg')no-repeat center center/cover;
+  height: 380px;
+  box-shadow: 0px 0px 10px 3px grey;
+}
+
+.search {
+  align-self: center;
+}
+
+@media (max-width: 500px){
+  .search {
+    display: none;
+  }
+}
+
+.search i {
+  color: white;
+  align-self: center;
+  padding-left: 9px;
+}
+
+.search input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.search i:hover {
+  background-color: rgb(134, 134, 134);
+  opacity: 0.5;
+}
+
+.search input::placeholder {
+  color: white;
+}
+
+.header {
+  background-color: #377344;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px 3px grey;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+.header .logo {
+  display: flex;
+  margin-right: 15px;
+}
+
+.header .logo img {
+  width: 66px;
+ /* box-shadow: 0px 0px 2px 2px gray;*/
+ border-radius: 70px;
+ margin-right: 20px;
+
+ 
+}
+
+.header .logo a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  font-size: 22px;
+}
+
+
+.navbar-icon i {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: white;
+  align-self: center;
+  display: none;
+}
+
+@media (max-width: 500px) {
+.navbar-icon i {
+    display: block;
+  }
+}
+
+.signing a {
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  background-color: #377;
+  padding: 6px;
+  border-radius: 20px;
+  margin-right: 10px;
+
+}
+
+.signing a:hover {
+  box-shadow: 0px 0px 10px 3px grey;
+
+}
+
+
+/*****search bar for smaller screen***/
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 66px;
+  background-color: rgb(6, 48, 48);
+  width: 60%;
+  padding: 1px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 200;
+  left: 90px;
+  display: none;
+  color: white;
+}
+
+@media (max-width: 500px){
+  .searchbar {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+}
+
+
+.searchbar i {
+  color: white;
+  align-self: center;
+  padding: 5px 12px;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+  margin-top: 1px;
+  width: 50%;
+  margin: auto;
+  
+}
+
+.searchbar input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 2px 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.searchbar input::placeholder {
+  color: white;
+}
+
+.searchbar i:hover {
+  background-color: rgb(134, 134, 134);
+  opacity: 0.5;
+}
+
+.searchbar input::placeholder {
+  color: white;
+}
+
+
+/*nav styling*****/
+
+.cruizee {
+  margin-top: 10px;
+}
+
+.cruizee a {
+  color: #377344;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px){
+  .cruizee a {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #377344;
+    border-radius: 20px;
+    
+  }
+}
+
+.cruizee a:hover {
+  text-decoration: none;
+  color: #377344;
+  box-shadow: 0px 0px 10px 3px #377344;
+  border: 1px solid grey;
+}
+
+/*******nav sttling end here****/
+
+/*******music genre***/
+.music-genres {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+}
+
+.genre-tag h1 {
+  text-transform: capitalize;
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #377344;
+  color: white;
+  padding: 9px 10px 4px 10px;
+  width: 50%;
+  border-radius: 20px 0px 20px;
+}
+
+.genre-tag h1:hover {
+  box-shadow: 0px 0px 10px 2px grey;
+}
+
+.genre a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  
+}
+
+.genre {
+  text-align: center;
+  margin-right: 20px;
+  background-color: #377344;
+  padding: 8px ;
+ /* border-radius: 30px;*/
+  color: white;
+}
+
+.genre:hover {
+  box-shadow: 0px 0px 10px 2px grey;
+}
+
+.trend-tag h1 {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #377344;
+  color: white;
+  padding: 9px 15px 4px 10px;
+  width: 50%;
+  border-radius: 30px 0px 30px;
+}
+
+.trend-tag h1:hover {
+  box-shadow: 0px 0px 10px 2px grey;
+}
+.musics {
+  display: flex;
+  width: 350px;
+  height: 130px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  border-right: 1px solid #000;
+  padding-bottom: 10px;
+  background-color: white;
+  margin: auto;
+}
+
+.musics img {
+  width: 50%;
+  height: 100px;
+  
+}
+
+.music-animation {
+    animation-name: bborder;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 50%;
+    height: 100px;
+}
+
+@keyframes bborder {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color:yellow;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+ 
+.song-descript {
+  padding-left: 10px;
+  padding-top: 5px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  height: 100px;
+  width: 50%;
+}
+
+.music-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 10px;
+ margin: 0 auto;
+ justify-content: center;
+ margin-top: 40px;
+}
+
+@media (max-width: 700px){
+  .music-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   }
+}
+
+.musics h3 {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(10, 3, 3);
+  padding-bottom: 10px;
+  border-bottom: #377 1px solid;
+}
+
+.musics p {
+  color: #377344;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+#play {
+  margin: 10px;
+}
+
+.musics button {
+  border: none;
+  background-color: #000;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
