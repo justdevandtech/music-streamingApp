@@ -3,40 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online music streaming platform</title>
-  <!------custom css-->
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="src/owl.carousel.min.css">
+  <link rel="stylesheet" href="src/owl.theme.default.min.css">
 
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
   <!-- font-awesome -->
-  <script src="https://kit.fontawesome.com/051baf41c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+ 
+  <!-------bulma css framwork-->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> -->
 
-  <!-- slick js -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!------custom css-->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Online music streaming platform</title>
 
 </head>
 <body>
   
 <!------navbar-->
 <nav>
-  <div class="header">
   <div class="logo">
     <img src="img/2.png" id="logo" alt="">
     <a href="index.html">cruisee</a>
-  </div>
+    </div>
 
 <div class="search">
-  <i class="fas fa-search">
-    <input type="text" placeholder="search">
-  </i>
-</div>
-
-<div class="searchbar"> 
-  <i class="fas fa-search">
-   <input type="text" placeholder="search for songs...">
-  </i> 
+  <!-- <i class="fas fa-search"> -->
+    <input type="text" id="searchbar" placeholder="search">
 </div>
 </nav>
 <!--------navbar end-->
@@ -48,7 +45,7 @@
   <div class="genre-tag">
     <h1>choose from genre <i class="fas fa-chevron-down"></i></h1>
   </div>
- <div class="music-genres">
+ <div class="music-genres item owl-carousel owl-theme">
    <div class="genre">
      <a href="#">afro-beat</a>
     </div>
@@ -184,10 +181,33 @@
 
   </div>
 
+  <div class="owl-carousel owl-theme">
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
 </div>
 
+</div>
+
+
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
 <!-- custom js -->
-<script src="app.js"></script>
+<script src="js/app.js"></script>
+<script src="slider.js"></script>
 
 </body>
 </html>

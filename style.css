@@ -10,71 +10,45 @@ body {
   font-family: 'Poppins' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif , sans-serif;
 }
 
-/**********container******/
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
 
 nav {
-  background: url('img/header.jpeg')no-repeat center center/cover;
-  height: 380px;
-  box-shadow: 0px 0px 10px 3px grey;
+  background-color: #377344;
+  display: flex;
+  
 }
 
 .search {
   align-self: center;
-}
-
-@media (max-width: 500px){
-  .search {
-    display: none;
-  }
-}
-
-.search i {
-  color: white;
-  align-self: center;
-  padding-left: 9px;
+  float: right;
+  
 }
 
 .search input {
   border: none;
   background: none;
   outline: none;
-  padding: 8px;
   color: white;
   font-weight: bold;
-}
-
-.search i:hover {
   background-color: rgb(134, 134, 134);
   opacity: 0.5;
+  padding: 10px 10px;
+  border-radius: 30px;
+  text-align: center;
+  width: 100%;
 }
+
 
 .search input::placeholder {
   color: white;
 }
 
-.header {
-  background-color: #377344;
+
+.logo {
   display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  box-shadow: 0px 0px 10px 3px grey;
-  position: fixed;
-  width: 100%;
-  z-index: 200;
+  margin-right: 50px;
 }
 
-.header .logo {
-  display: flex;
-  margin-right: 15px;
-}
-
-.header .logo img {
+.logo img {
   width: 66px;
  /* box-shadow: 0px 0px 2px 2px gray;*/
  border-radius: 70px;
@@ -83,7 +57,7 @@ nav {
  
 }
 
-.header .logo a {
+.logo a {
   text-transform: capitalize;
   text-decoration: none;
   color: white;
@@ -348,10 +322,10 @@ nav {
  margin-top: 40px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
   .music-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
    }
 }
@@ -383,3 +357,4 @@ nav {
   padding: 5px 10px;
   margin-bottom: 10px;
 }
+
